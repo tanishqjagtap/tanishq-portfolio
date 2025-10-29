@@ -15,7 +15,7 @@ const About = () => {
             data-aos="fade-right"
           >
             <img
-              src="images/profile.jpg"
+              src="src\assets\Profile.jpg"
               alt="Profile"
               className="img-fluid rounded-circle about-img shadow-lg"
             />
