@@ -1,7 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import profileImg from "../assets/profile.jpg"; // update with your correct image path
+// import profileImg from "../assets/profile.jpg"; // update with your correct image path
 
 AOS.init();
 
@@ -15,7 +15,7 @@ const About = () => {
             data-aos="fade-right"
           >
             <img
-              src={profileImg}
+              src="images/profile.jpg"
               alt="Profile"
               className="img-fluid rounded-circle about-img shadow-lg"
             />
