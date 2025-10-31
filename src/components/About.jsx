@@ -1,7 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import profileImg from "../assets/profile.jpg"; // update with your correct image path
+import profileImg from "../assets/profile.jpg"; // ✅ correct import
 
 AOS.init();
 
@@ -14,14 +14,19 @@ const About = () => {
             className="col-lg-4 col-md-5 mb-5 mb-md-0 text-center"
             data-aos="fade-right"
           >
+            {/* ✅ use the imported variable here, NOT a hardcoded path */}
             <img
-              src="src\assets\Profile.jpg"
+              src={profileImg}
               alt="Profile"
               className="img-fluid rounded-circle about-img shadow-lg"
+              style={{ width: "250px", height: "250px", objectFit: "cover" }}
             />
           </div>
 
-          <div className="col-lg-6 col-md-7 text-center text-md-start" data-aos="fade-left">
+          <div
+            className="col-lg-6 col-md-7 text-center text-md-start"
+            data-aos="fade-left"
+          >
             <h2 className="text-gradient mb-4">About Me</h2>
             <p className="lead text-light mb-3">
               Hi, I'm <strong>Tanishq</strong> — a passionate developer who loves
